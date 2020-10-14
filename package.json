@@ -1,0 +1,28 @@
+{
+  "name": "criador-de-partys",
+  "version": "1.0.0",
+  "description": "Criador de partys para o jogo Hagnarok",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianoSilvaJesus/criador-de-partys.git"
+  },
+  "author": "Adriano Silva, Pabli Abias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianoSilvaJesus/criador-de-partys/issues"
+  },
+  "homepage": "https://github.com/AdrianoSilvaJesus/criador-de-partys#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
