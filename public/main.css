@@ -1,0 +1,34 @@
+body {
+    background-color: #101015;
+}
+div#Header {
+    background-color: #000;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+div#button1 {
+    background-color: rgb(77, 161, 240);
+    width: 10%;
+    height: 5%;
+    left: 90%;
+    top: 0%;
+    position: fixed;
+    text-align: center;
+}
+div#button2 {
+    background-color: rgb(77, 161, 240);
+    width: 10%;
+    height: 5%;
+    left: 10%;
+    top: 0%;
+    position: fixed;
+    border-left: black solid;
+    text-align: center;
+}
+i{
+    position: relative;
+    top: 20%;
+}
