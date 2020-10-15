@@ -1,6 +1,7 @@
 body {
     background-color: #101015;
 }
+
 div#Header {
     background-color: #000;
     width: 100%;
@@ -28,7 +29,85 @@ div#button2 {
     border-left: black solid;
     text-align: center;
 }
-i{
+#Header i{
     position: relative;
     top: 20%;
+}
+
+.Particao {
+    height: 27%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.ParticaoPt2 {
+    top: 32%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.ParticaoPt3 {
+    top: 59%;
+}
+.ParticaoPt4 {
+    top: 86%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.ParticaoPt5 {
+    top: 113%;
+}
+.ParticaoPt6 {
+    top: 140%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.ParticaoPt7 {
+    top: 167%;
+}
+
+.Particao h3{
+    text-align: center;
+    top: -12%;
+    color: rgb(77, 161, 240);;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.Ticket {
+    height: 49%;
+    width: 10%;
+    top: 0%;
+    position: absolute;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 5%;
+}
+.Ticket::before {
+    content: '';
+
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    background-color: cornflowerblue;
+    transition: .3s ease;
+}
+#Pago {
+    top: 51%;
+}
+
+#Pago::before {
+    background-color: brown;
+}
+
+.Ticket:hover::before{
+    content: '';
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5% 5% 0;
+    position: absolute;
+    left: 0;
 }
