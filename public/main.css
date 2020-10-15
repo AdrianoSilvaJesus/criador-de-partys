@@ -1,5 +1,6 @@
 body {
     background-color: #101015;
+    font-family: 'Sansita Swashed';
 }
 
 div#Header {
@@ -83,6 +84,7 @@ div#button2 {
     background-color: aliceblue;
     text-align: center;
     border-radius: 5%;
+    font-family: 'Bangers';
 }
 .Ticket::before {
     content: '';
@@ -102,12 +104,18 @@ div#button2 {
     background-color: brown;
 }
 
-.Ticket:hover::before{
+.Ticket:hover{
     content: '';
+    background-color:rgba(0,0,0,0);
+    transition: .3s ease;
+}
+
+.Ticket:hover::before{
+    content: 'Loading...';
     overflow: hidden;
     height: 100%;
     width: 100%;
     border-radius: 0 5% 5% 0;
     position: absolute;
-    left: 0;
+    left: 0%;
 }
