@@ -4,57 +4,38 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="../public/css/main.css">
-        <link rel="stylesheet" href="../public/css/dashboard.css">
-        <link rel="stylesheet" href="../public/css/ticket.css">
-        <link rel="stylesheet" href="../public/css/btns.css">
+        <link rel="stylesheet" href="css/dashboard.css">
         <link href='https://fonts.googleapis.com/css?family=Sansita+Swashed' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     </head>
 
-    <!--
-      Atualizações
-
-      - Deixar isso aqui para conseguirmos saber o que mexermos de relevante, o que acha?
-
-      - Separei os css em partes:
-        > Ticket (ticket.css)
-        > Partições (Dashboard.css)
-        > Botões latereais (btns..css)
-        > Pagina, Header, Fooder (Main.css)
-      
-      - Arrumei o Script que deixa quadradinho os botões de user/bell
-      - Diminui os Div de Ticket
-        - O <p> ficou desalinhado, não sei arrumar isso na Vertical não
-        - Mesma coisa com o botão lateral
-      - Coloquei esses botões mas está de enfeite pode quebrar e criar outro se quiser
-      
-      - Acho que de relevante é isso.
-    -->
     <body onload="Resize()">
         <header id="Header">
             <div id="button1">
                 <i id="usericon" class="fas fa-user"></i>
             </div>
             <div id="button2">
-                <i id="bell" class="fas fa-bell" onclick="ChangeColor()"></i>
+                <i id="bell" class="fas fa-bell"></i>
             </div>
         </header>
         <div class="container">
           <div class="Particao" id="ET">
               <h3>EndLess Tower</h3>
               <div class="Tickets-Section">
-                <div class="BtnArrowPag BtnArrowPagLeft" id="ET1"></div>
                 <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Grátis -->
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
+                  <div class="Ticket">
+                      Gratís
+                      <p>
+                          14:00
+                      </p>
+                  </div>
               </div>
-              <div class="BtnArrowPag BtnArrowPagRigth" id="ET1"></div>
                 <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Pagos -->
-                  <div class="Ticket" id="Pago"><p>Valor</p></div>
+                  <div class="Ticket" id="Pago">
+                      Pago
+                      <p>
+                          R$ 2,00
+                      </p>
+                  </div>
                 </div>
               </div>
           </div>
@@ -95,31 +76,32 @@
               <h3>Thanatos Tower</h3>
               <div class="Tickets-Section">
                 <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Grátis -->
+                  <div class="Ticket">
+                      Gratís
+                      <p>
+                          14:00
+                      </p>
+                  </div>
+                  <div class="Ticket">
+                      Gratís
+                      <p>
+                          14:00
+                      </p>
+                  </div>
                 </div>
                 <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Pagos -->
+                  <div class="Ticket" id="Pago">
+                      Pago
+                      <p>
+                          R$ 2,00
+                      </p>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
-          <div class="Particao gray" id="EC">
-            <h3>EC</h3>
-            <div class="Tickets-Section">
-              <div class="Tickets-Stack">
-                <!-- Aqui vão os Tickets Grátis -->
-              </div>
-              <div class="Tickets-Stack">
-                <!-- Aqui vão os Tickets Pagos -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
           <footer></footer>
         </div>
     </body>
-    
-    <script type="text/javascript" src="../public/js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/92b470d4bc.js" crossorigin="anonymous"></script>
 </html>
