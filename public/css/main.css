@@ -1,90 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
     background-color: #101015;
     font-family: 'Sansita Swashed';
+    width: 100%;
+    height: 100%;
 }
 
-div#Header {
+header#Header {
     background-color: #000;
     width: 100%;
     height: 5%;
-    position: fixed;
-    top: 0%;
-    left: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
 }
 div#button1 {
     background-color: rgb(77, 161, 240);
-    width: 10%;
-    height: 5%;
-    left: 90%;
-    top: 0%;
-    position: fixed;
+    width: 2.5%;
+    height: 100%;
     text-align: center;
+    position: relative;
+    flex: 1 0 1;
 }
 div#button2 {
     background-color: rgb(77, 161, 240);
-    width: 10%;
-    height: 5%;
-    left: 10%;
-    top: 0%;
-    position: fixed;
+    width: 2.5%;
+    height: 100%;
     border-left: black solid;
     text-align: center;
+    position: relative;
+    flex: 1 0 1;
 }
 #Header i{
     position: relative;
     top: 20%;
 }
 
+.container {
+  top: 5%;
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
 .Particao {
     height: 27%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.05);
-    position: absolute;
-    top: 5%;
-    left: 0%;
-}
-
-.ParticaoPt2 {
-    top: 32%;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-.ParticaoPt3 {
-    top: 59%;
-}
-.ParticaoPt4 {
-    top: 86%;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-.ParticaoPt5 {
-    top: 113%;
-}
-.ParticaoPt6 {
-    top: 140%;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-.ParticaoPt7 {
-    top: 167%;
-}
-
-.Particao h3{
-    text-align: center;
-    top: -12%;
-    color: rgb(77, 161, 240);;
-    overflow: hidden;
     position: relative;
 }
 
+.Tickets-Section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
+h3{
+    text-align: center;
+    color: rgb(77, 161, 240);;
+    position: relative;
+}
 
 .Ticket {
+    margin-right: 5px;
     height: 49%;
     width: 10%;
-    top: 0%;
-    position: absolute;
+    position: relative;
     background-color: aliceblue;
     text-align: center;
     border-radius: 5%;
     font-family: 'Bangers';
+    flex: 1 0 1;
 }
 .Ticket::before {
     content: '';
@@ -95,9 +99,6 @@ div#button2 {
     left: 0;
     background-color: cornflowerblue;
     transition: .3s ease;
-}
-#Pago {
-    top: 51%;
 }
 
 #Pago::before {
@@ -118,4 +119,12 @@ div#button2 {
     border-radius: 0 5% 5% 0;
     position: absolute;
     left: 0%;
+}
+
+.gray {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+footer{
+  width: 100%;
 }
