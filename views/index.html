@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../public/css/dashboard.css">
         <link rel="stylesheet" href="../public/css/ticket.css">
         <link rel="stylesheet" href="../public/css/btns.css">
+        <link rel="stylesheet" href="../public/css/Painel.css">
+
         <link href='https://fonts.googleapis.com/css?family=Sansita+Swashed' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     </head>
@@ -40,6 +42,7 @@
                 <i id="bell" class="fas fa-bell" onclick="ChangeColor()"></i>
             </div>
         </header>
+        <div id="PainelControle"></div>
         <div class="container">
           <div class="Particao" id="ET">
               <h3>EndLess Tower</h3>
@@ -47,14 +50,14 @@
                 <div class="BtnArrowPag BtnArrowPagLeft" id="ET1"></div>
                 <div class="Tickets-Stack">
                   <!-- Aqui vão os Tickets Grátis -->
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
-                  <div class="Ticket" id="Ticket"><p>Horário</p></div>
+                  <div class="Ticket" id="Ticket" onclick="GratisClick()"><p>14:00</p></div>
+                  <div class="Ticket" id="Ticket" onclick="GratisClick()"><p>15:00</p></div>
+                  <div class="Ticket" id="Ticket" onclick="GratisClick()"><p>16:00</p></div>
               </div>
               <div class="BtnArrowPag BtnArrowPagRigth" id="ET1"></div>
                 <div class="Tickets-Stack">
                   <!-- Aqui vão os Tickets Pagos -->
-                  <div class="Ticket" id="Pago"><p>Valor</p></div>
+                  <div class="Ticket" id="Pago" onclick="PagoClick()"><p>R$ 2,00</p></div>
                 </div>
               </div>
           </div>
@@ -121,5 +124,7 @@
     </body>
     
     <script type="text/javascript" src="../public/js/main.js"></script>
+    <script type="text/javascript" src="../public/js/Painel.js"></script>
+
     <script src="https://kit.fontawesome.com/92b470d4bc.js" crossorigin="anonymous"></script>
 </html>

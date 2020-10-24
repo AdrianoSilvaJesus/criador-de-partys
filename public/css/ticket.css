@@ -11,10 +11,6 @@
     min-width: 55px;
 }
 
-#pago{
-
-}
-
 .Ticket::before {
     content: '';
 

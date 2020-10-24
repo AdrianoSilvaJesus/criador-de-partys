@@ -8,4 +8,5 @@ function Resize() {
     // Resizes
     document.getElementById("button1").style.width = HeaderHeight;
     document.getElementById("button2").style.width = HeaderHeight;
+    document.getElementById("Close").style.width = HeaderHeight;
 };
