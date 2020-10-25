@@ -23,6 +23,7 @@ header#Header {
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  z-index: 990;
 }
 div#button1 {
   background-color: rgb(77, 161, 240);
@@ -31,6 +32,7 @@ div#button1 {
   text-align: center;
   position: relative;
   flex: 1 0 1;
+  z-index: 991;
 }
 div#button2 {
   background-color: rgb(77, 161, 240);
@@ -40,6 +42,7 @@ div#button2 {
   text-align: center;
   position: relative;
   flex: 1 0 1;
+  z-index: 991;
 }
 
 #Header i{

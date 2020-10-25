@@ -3,7 +3,7 @@ const Ticket = require('../models/ticket-model');
 const getTickets = async(request,response) => {
 	let tickets;
 	try{
-		tickets = await Ticket.find({});
+		tickets = await Ticket.find({},"-valor");
 	}catch(err){
 		const error = new Error('Não foi possivel obter os tickets');
 		error.status = 500;

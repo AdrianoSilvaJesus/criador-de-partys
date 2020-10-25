@@ -1,0 +1,19 @@
+.Input {
+    width: 30%;
+}
+
+.Label {
+    width: 10%;
+    color: wheat;
+    padding: 0 5% 0 10%;
+}
+
+.select {
+    background-color: violet;
+}
+
+h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 2% 0;
+}

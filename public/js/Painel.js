@@ -1,34 +1,31 @@
-function GratisClick() {
+TaAbertoDiacho = false;
+
+function ValidarSeTaAberto() {
+    console.log(TaAbertoDiacho)
+    if (TaAbertoDiacho === true) {
+        console.log('Hello')
+        ClosePainel();  
+    }
     CreatPainel();
+}
+
+function GratisClick() {
+    ValidarSeTaAberto();
     document.getElementById("Painel").style.background = "#6495ed99";
 }
 
 function PagoClick() {
-    CreatPainel();
+    ValidarSeTaAberto();
     document.getElementById("Painel").style.background = "#a52a2a99";
 }
-function ClosePainel() {  
-    document.getElementById("Protecao").remove();
+
+function CriarTicket() {
+    ValidarSeTaAberto();
+    document.getElementById("Painel").style.background = "#00000099";
+    CriandoTicket();
 }
 
-function CreatPainel() {
-    // Setando Vars
-    var Painel = document.createElement("DIV");
-    var Close = document.createElement("DIV");
-    var Protecao = document.createElement("DIV");
-
-    // Setando Ids
-    Painel.id = "Painel";
-    Close.id = "Close";
-    Protecao.id = "Protecao";
-
-    // Setando Conteudos
-    Close.innerText = "X";
-
-    // Setando Pais
-    document.getElementById("PainelControle").appendChild(Protecao);
-    document.getElementById("Protecao").appendChild(Painel);
-    document.getElementById("Painel").appendChild(Close);
-    Close.addEventListener("click", ClosePainel);
-    Resize();
-};
+function ClosePainel() {  
+    document.getElementById("Protecao").remove();
+    TaAbertoDiacho = false;
+}
