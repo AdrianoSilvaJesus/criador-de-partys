@@ -1,107 +1,14 @@
-<html>
-    <head>
-        <title>Instancia desejada</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css">
+<%-include('includes/head')%>
         <link rel="stylesheet" href="css/dashboard.css">
-        <link href='https://fonts.googleapis.com/css?family=Sansita+Swashed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/Painel.css">
+        <link rel="stylesheet" href="css/ticket.css">
+        <link rel="stylesheet" href="css/btns.css">
     </head>
-
     <body onload="Resize()">
-        <header id="Header">
-            <div id="button1">
-                <i id="usericon" class="fas fa-user"></i>
-            </div>
-            <div id="button2">
-                <i id="bell" class="fas fa-bell"></i>
-            </div>
-        </header>
+        <%- include('includes/header')%>
+        <div id="PainelControle"></div>
         <div class="container">
-          <div class="Particao" id="ET">
-              <h3>EndLess Tower</h3>
-              <div class="Tickets-Section">
-                <div class="Tickets-Stack">
-                  <div class="Ticket">
-                      Gratís
-                      <p>
-                          14:00
-                      </p>
-                  </div>
-              </div>
-                <div class="Tickets-Stack">
-                  <div class="Ticket" id="Pago">
-                      Pago
-                      <p>
-                          R$ 2,00
-                      </p>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="Particao gray" id="Cake">
-              <h3>Cake</h3>
-              <div class="Tickets-Section">
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Grátis -->
-                </div>
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Pagos -->
-                </div>
-              </div>
-          </div>
-          <div class="Particao" id="Undead">
-              <h3>Undeads</h3>
-              <div class="Tickets-Section">
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Grátis -->
-                </div>
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Pagos -->
-                </div>
-              </div>
-          </div>
-          <div class="Particao gray" id="Oracle">
-              <h3>Oracle</h3>
-              <div class="Tickets-Section">
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Grátis -->
-                </div>
-                <div class="Tickets-Stack">
-                  <!-- Aqui vão os Tickets Pagos -->
-                </div>
-              </div>
-          </div>
-          <div class="Particao" id="TT">
-              <h3>Thanatos Tower</h3>
-              <div class="Tickets-Section">
-                <div class="Tickets-Stack">
-                  <div class="Ticket">
-                      Gratís
-                      <p>
-                          14:00
-                      </p>
-                  </div>
-                  <div class="Ticket">
-                      Gratís
-                      <p>
-                          14:00
-                      </p>
-                  </div>
-                </div>
-                <div class="Tickets-Stack">
-                  <div class="Ticket" id="Pago">
-                      Pago
-                      <p>
-                          R$ 2,00
-                      </p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <footer></footer>
+          
+
         </div>
-    </body>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/92b470d4bc.js" crossorigin="anonymous"></script>
-</html>
+        <%- include('includes/end') %>

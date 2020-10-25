@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/AdrianoSilvaJesus/criador-de-partys.git"
   },
-  "author": "Adriano Silva, Pabli Abias",
+  "author": "Adriano Silva, Pablo Abias",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AdrianoSilvaJesus/criador-de-partys/issues"
@@ -20,7 +20,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.5"

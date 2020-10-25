@@ -13,7 +13,6 @@
 
 .Ticket::before {
     content: '';
-
     height: 100%;
     width: 10%;
     position: absolute;

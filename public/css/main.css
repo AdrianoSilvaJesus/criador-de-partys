@@ -48,6 +48,9 @@ div#button2 {
 }
 
 footer{
+  height: 4%;
   width: 100%;
-  background-color: wheat;
+  text-align: center;
+  color: white;
+  background-color: #000000;
 }
