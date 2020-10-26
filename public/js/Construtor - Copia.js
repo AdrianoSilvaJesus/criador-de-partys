@@ -34,44 +34,49 @@ function CriandoTicket () {
     Titulo.id = "Titulo";
     Titulo.innerText = "Criando um Ticket";
     document.getElementById("Painel").appendChild(Titulo);
-    var Titulo = document.createElement("div");
-    Titulo.id = "Container2";
-    document.getElementById("Painel").appendChild(Titulo);
 
     const Nomes = ['Titulo','Descricao','Instancia','Nivel','Horario','Valor','Owner','Vaga1','Vaga2','Vaga3','Vaga4','Vaga5','Owner2','Vaga6','Vaga7','Vaga8','Vaga9','Vaga10']
-
-    var Style = false;
-
-    for (var i = 0  ; i < 18; i++) {
+    var Style1 = false;
+    
+    for (var i = 0  ; i < 9; i++) {
         var Criando = document.createElement("Label");
         var Criando2 = document.createElement("input");
-        
+        var Criando3 = document.createElement("Label");
+        var Criando4 = document.createElement("input");
         if (i >1) {if (i <5){
-            var Criando2 = document.createElement("select");  
+            var Criando2 = document.createElement("select");
         }}
-        
-        if (Style === false) {
-            Style = true;
             var Labels = "label Style";
             var Interativos = "input Style";
-        }else{
-            Style = false;
-            var Labels = "label1 Style1";
-            var Interativos = "input1 Style1";
-        }
+
+            var Labels1 = "label Style1";
+            var Interativos1 = "input Style1";
+
 
         // Labels
         Criando.id = "p"+i;
         Criando.classList = Labels;
         Criando.innerText = Nomes[i];
-        Criando.style.gridArea = 'l'.concat(i);
-        document.getElementById("Container2").appendChild(Criando);
+        document.getElementById("Painel").appendChild(Criando);
+        Criando3.id = "p"+(i+9);
+        Criando3.classList = Labels1;
+        Criando3.innerText = Nomes[(i+9)];
+        document.getElementById("Painel").appendChild(Criando3);
+        var Break2 = document.createElement("br");
+        document.getElementById("Painel").appendChild(Break2);
 
         // Interativos
         Criando2.id = "I"+i;
-        Criando2.classList = Interativos;
-        Criando2.style.gridArea = 'i'.concat(i);
+        Criando2.classList = Interativos1;
         Criando2.value = Nomes[i];
-        document.getElementById("Container2").appendChild(Criando2);
+        document.getElementById("Painel").appendChild(Criando2);
+        Criando4.id = "I"+(i+9);
+        Criando4.classList = Interativos;
+        Criando4.value = Nomes[(i+9)];
+        document.getElementById("Painel").appendChild(Criando4);
+
+        //break
+        var Break = document.createElement("br");
+        document.getElementById("Painel").appendChild(Break);
      }
 }
