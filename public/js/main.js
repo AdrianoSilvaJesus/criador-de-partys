@@ -9,4 +9,10 @@ function Resize() {
     document.getElementById("button1").style.width = HeaderHeight;
     document.getElementById("button2").style.width = HeaderHeight;
     document.getElementById("Close").style.width = HeaderHeight;
+
+    if (document.getElementById("Painel").offsetHeight <= (document.getElementById("Painel").offsetWidth)*0.7){
+        document.getElementById("Painel").style.backgroundSize = "100% 100%";
+    }else{
+        document.getElementById("Painel").style.backgroundSize = "auto";
+    };
 };
