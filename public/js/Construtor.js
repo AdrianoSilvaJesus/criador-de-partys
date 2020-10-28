@@ -1,9 +1,13 @@
 class Painel{
     constructor(){
         this.verificaPainel = false;
-    }
+    };
+    
+renderPainel(color = null, imageUrl = null){
+        if (document.getElementById("Protecao") !== null) {
+            document.getElementById("Protecao").remove();
+        }
 
-    renderPainel(color = null, imageUrl = null){
         // Setando Vars
         var Painel= document.createElement("DIV");
         var Close = document.createElement("DIV");
