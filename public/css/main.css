@@ -15,39 +15,33 @@ body {
     height: 100%;
 }
 
-header#Header {
+h3 {
+  font-size: 3vh;
+}
+
+#Header {
   background-color: #000;
   width: 100%;
   height: 5%;
-  display: flex;
+}
+
+.containerHeader {
+  width: 98%;
+  height: 100%;
   align-items: center;
+  display: flex;
   justify-content: flex-end;
   position: relative;
   z-index: 990;
 }
-div#button1 {
-  background-color: rgb(77, 161, 240);
-  width: 2.5%;
-  height: 100%;
-  text-align: center;
-  position: relative;
-  flex: 1 0 1;
-  z-index: 991;
-}
-div#button2 {
-  background-color: rgb(77, 161, 240);
-  width: 2.5%;
-  height: 100%;
-  border-left: black solid;
-  text-align: center;
-  position: relative;
-  flex: 1 0 1;
-  z-index: 991;
-}
+
 
 #Header i{
   position: relative;
-  top: 20%;
+  top: 1.3vh;
+  font-size: 2vh;
+  text-align: center;
+
 }
 
 footer{

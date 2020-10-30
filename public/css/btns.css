@@ -1,0 +1,20 @@
+.btn {
+    background-color: rgb(77, 161, 240);
+    height: 100%;
+    width: 5vh;
+    text-align: center;
+    position: relative;
+    flex: 1 0 1;
+    border-left: black solid;
+    z-index: 991;
+    font-size: 2vh;
+}
+
+#button2 {
+    order: -1;
+}
+
+#CloseX {
+    position: relative;
+    top: 15%;
+}

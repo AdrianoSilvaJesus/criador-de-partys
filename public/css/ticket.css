@@ -1,14 +1,33 @@
 .Ticket {
     margin-right: 0.2%;
     height: 100%;
-    width: 10%;
+    width: 100%;
     position: relative;
     background-color: aliceblue;
     text-align: center;
     border-radius: 5%;
     font-family: 'Bangers';
     flex: 1 0 1;
-    min-width: 55px;
+
+    font-size: 2vh;
+    min-width: 60px;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+@media (max-width: 1440px) {
+    .Ticket {
+        min-width: auto;
+        max-width: auto;
+        min-height: 30px;
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Ticket {
+        min-height: 20px;
+    }
 }
 
 .Ticket::before {
