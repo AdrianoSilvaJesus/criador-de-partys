@@ -1,71 +1,103 @@
-#Container2 {
+.TituloH2 {
+    text-align: center;
+    width: 100%;
     position: absolute;
-    width: 95%;
-    margin: 0 auto;
-    height: 85%;
     top: 10%;
-    left: 5%;
+    font-size: 4vh;
+    vertical-align: middle;
+}
 
-    display: grid;  
+.ContainerCriandoTicket {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+    bottom: 5%;
+    display: grid;
     grid-template-areas:
-    "l0 l1"
-    "i0 i1"
-    "l2 l3"
-    "i2 i3"
-    "l4 l5"
-    "i4 i5"
-    "l6 l7"
-    "i6 i7"
-    "l8 l9"
-    "i8 i9"
-    "l10 l11"
-    "i10 i11"
-    "l12 l13"
-    "i12 i13"
-    "l14 l15"
-    "i14 i15"
-    "l16 l17"
-    "i16 i17";
+    "Label1 Label1 Label1 Label1"
+    "Input1 Input1 Input1 Input1"
+    "Label2 Label2 Label2 Label2"
+    "Input2 Input2 Input2 Input2"
+    "Label3 Label4 Label5 Label6"
+    "Input14 Input15 Input16 Input3"
+    "Label7 Label7 Label8 Label8"
+    "Input4 Input4 Input5 Input5"
+    "Label12 Label9 Label10 Label11"
+    "Input6 Input7 Input10 Input11"
+    "Input8 Input9 Input12 Input13"
+    "EnviarTicket EnviarTicket EnviarTicket EnviarTicket"
+    ;
+    grid-gap: 2px 10px;
 }
 
-.Style{
-    width: 90%;
-
+.EnviarTicket{
+    border: 2px solid rgb(8, 187, 241);
+    background-color: rgba(34, 34, 34, 1);
+    color: rgb(8, 187, 241);
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    font: bold;
 }
 
-.Style1{
-    width: 90%;
-}
-
-#Container2 label{
-    width: 40%;
-    text-align: center;
-    border-radius: 10px 10px 0 0;
-}
-.label {
-    background-color: rgba(255,250,250, 0.6);
-    border-bottom: 1px solid rgba(255,250,250, 0.7);
-}
-
-.label1 {
-    background-color: rgba(43, 160, 255, 0.6);
-    border-bottom: 1px solid rgba(43, 160, 255, 0.5);
-}
-
-.input {
-    background-color: rgba(255,250,250, 0.6);
+.Input {
     border: 0;
-    border-radius: 0 10px 10px 10px;
-    margin-bottom: 1%;
-}
-.input1 {
-    background-color: rgba(43, 160, 255, 0.6);
-    border: 0;
-    border-radius: 0 10px 10px 10px;
-    margin-bottom: 1%;
+    border-bottom: 2px solid rgb(8, 187, 241);
+    background-color: #222;
+    color:rgb(8, 187, 241);
+    font-size: 2vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-#Painel h2 {
+.Label {
+    color:rgb(8, 187, 241);
+    font-size: 3vh;
     text-align: center;
-    top: 5%;
+    height: 4vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .ContainerCriandoTicket {
+        height: 85%;
+        grid-template-areas:
+        "Label1 Label1"
+        "Input1 Input1"
+        "Label2 Label2"
+        "Input2 Input2"
+        "Label3 Label4"
+        "Input14 Input15"
+        "Label5 Label6"
+        "Input16 Input3"
+        "Label7 Label8"
+        "Input4 Input5"
+        "Label12 Label9"
+        "Input6 Input7"
+        "Input10 Input11"
+        "Input8 Input9"
+        "Input12 Input13"
+        "EnviarTicket EnviarTicket"
+    }
+    .Label {
+        font-size: 2vh;
+        height: 3vh;
+    }
+    #Label10{
+        display: none;
+    }
+    #Label11{
+        display: none;
+    }
+    .TituloH2 {
+        top: 3%;
+        height: 10%;
+    }
 }

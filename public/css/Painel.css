@@ -3,11 +3,20 @@ div#Painel {
     width: 80%;
     height: 80%;
     background-color:rgba(28, 191, 202, 0.5);
-
     z-index: 997;
     left: 10%;
     top: 10%;
     border-radius: 20px;
+    border: 2px solid black;
+}
+
+.img {
+    background-image: url("../img/back1.jpg");
+    background-size: "auto 100%";
+    background-repeat: "no-repeat";
+    background-position: "Center";
+    
+    background-color:rgba(28, 191, 202, 0.5);
 }
 
 div#close {
