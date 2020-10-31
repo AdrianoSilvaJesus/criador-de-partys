@@ -38,12 +38,20 @@ class Painel{
     
 function CriarUmTicket() {
     const formulario = new Form("formulario-ticket");
-    formulario.createForm();
+    
+    formulario.createForm('Criando Ticket');
 
-    const campos = ['Título','Descrição','Instância','Nível','Horário','Valor','Owner','Owner2','Vagas','Vagas','Vagas','Vagas','Owner2','Vagas','Vagas','Vagas','Vagas','Vagas']
+    const campos = [
+        { label: 'Título', name: 'titulo' },
+        { label: 'Descrição', name: 'descricao' },
+        { label: 'Instância', name: 'instancia' },
+        { label: 'Nível', name: 'nivel' },
+        { label: 'Horário', name: 'horario' },
+        { label: 'Valor', name: 'valor'}
+    ];
 
     for(campo of campos){
-        formulario.input(campo, 'text', 'entre horário...');
+        formulario.input(campo.label, 'text', campo.name, 'entre horário...');
     }
 };
 

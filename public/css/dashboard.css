@@ -2,14 +2,7 @@
   width: 100%;
   position: relative;
   text-align: center;
-
-  
-  
-  /* Old Style
-  display: flex;
-  flex-direction: column;
-  */
-  }
+}
 
 .Particao {
     min-height: 30%;

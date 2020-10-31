@@ -1,0 +1,78 @@
+#formulario-ticket {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-size: 4vh;
+}
+
+#formulario-ticket div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#formulario-ticket label {
+    font-size: 15pt;
+}
+
+#formulario-ticket input{
+    height: 2%;
+    width: 90%;
+}
+
+.EnviarTicket{
+    border: 2px solid rgb(8, 187, 241);
+    background-color: rgba(34, 34, 34, 1);
+    color: rgb(8, 187, 241);
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    font: bold;
+}
+
+@media (max-width: 768px) {
+    .ContainerCriandoTicket {
+        height: 85%;
+        grid-template-areas:
+        "Label1 Label1"
+        "Input1 Input1"
+        "Label2 Label2"
+        "Input2 Input2"
+        "Label3 Label4"
+        "Input14 Input15"
+        "Label5 Label6"
+        "Input16 Input3"
+        "Label7 Label8"
+        "Input4 Input5"
+        "Label12 Label9"
+        "Input6 Input7"
+        "Input10 Input11"
+        "Input8 Input9"
+        "Input12 Input13"
+        "EnviarTicket EnviarTicket"
+    }
+    .Label {
+        font-size: 2vh;
+        height: 3vh;
+    }
+    #Label10{
+        display: none;
+    }
+    #Label11{
+        display: none;
+    }
+    .TituloH2 {
+        top: 3%;
+        height: 10%;
+    }
+}
