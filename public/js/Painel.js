@@ -9,7 +9,6 @@ function PagoClick(){
 }   
 
 function CriarTicket() {
-    //"url('../public/img/back1.jpg')"
     painel.renderPainel("#fffffff7");
     CriarUmTicket();
 }
