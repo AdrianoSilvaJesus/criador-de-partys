@@ -3,7 +3,7 @@ function ComboBoxSetando() {
     const Cake = ['Até o 5','Até o 10','Até o 15'];
     const Oracle = ['Fácil', 'Médio', 'Hard', 'Nightmare'];
     const TT = ['TTE', 'TTB', 'TTL'];
-    const EC = ['01+', '11+', '21+', '31+', '41+', '51+', '61+'];
+    const EC = ['01+', '11+', '21+', '31+', '41+', '51+'];
 
     var Cb = document.getElementById("ComboBox1")
     var InstanciaAtive = Cb.options[Cb.selectedIndex].value;

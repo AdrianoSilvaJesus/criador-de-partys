@@ -55,6 +55,7 @@ class Painel{
     
 function CriarUmTicket() {
     const Nomes = ['Título','Descrição','Instância','Nível','Horário','Valor','Owner','Owner2','Vagas','Vagas','Vagas','Vagas','Owner2','Vagas','Vagas','Vagas','Vagas','Vagas']
+    const Names = ['titulo','descricao','valor','owner','owner2','vaga1','vaga5','vaga3','vaga7','vaga2','vaga6','vaga4','vaga8','intancia','nivel','horario']
 
     for (i = -2; i < 29; i++) {
         // Criando Ajustes
@@ -66,15 +67,17 @@ function CriarUmTicket() {
             var QualConteudo = "Criando um Ticket.";
             var Pai = "Painel";
             var GridArea = "";
+            var Name = ""
 
         }else if (i === -2) {
             // Container
-            var OqueCriar = "div";
+            var OqueCriar = "form";
             var QualId = "ContainerCriandoTicket";
             var QualClass = "ContainerCriandoTicket";
             var QualConteudo = "";
             var Pai = "Painel";
             var GridArea = "";
+            var Name = ""
 
         }else if (i === -1) {
             // Enviar
@@ -83,7 +86,8 @@ function CriarUmTicket() {
             var QualClass = "EnviarTicket";
             var QualConteudo = "Enviar Ticket";
             var Pai = "ContainerCriandoTicket";
-            var GridArea = "EnviarTicket";           
+            var GridArea = "EnviarTicket";   
+            var Name = ""        
 
         }else if (i<13) {
             // São as Labels.
@@ -93,15 +97,17 @@ function CriarUmTicket() {
             var QualConteudo = Nomes[i-1];
             var Pai = "ContainerCriandoTicket";
             var GridArea = "Label"+i;
+            var Name = ""
 
         }else if (i<26){
             // São os TxtBox.
             var OqueCriar = "input";
-            var QualId  = "TxtBox"+(i-15)
+            var QualId  = "TxtBox"+(i-13)
             var QualClass = "Input TxtBox"
             var QualConteudo = "";
             var Pai = "ContainerCriandoTicket";
             var GridArea = "Input"+(i-12);
+            var Name = true
 
         }else{
             // São os ComboBox.
@@ -111,6 +117,7 @@ function CriarUmTicket() {
             var QualConteudo = "";
             var Pai = "ContainerCriandoTicket";
             var GridArea = "Input"+(i-12);
+            var Name = true
         }
 
         // Setando Vars.       
@@ -124,6 +131,9 @@ function CriarUmTicket() {
 
         // Setando Conteudo.
             Criando.innerText = QualConteudo;
+            if (Name !== "") {
+                Criando.setAttribute('name',Names[i-13]);
+            }
 
         // Setando GridArea 
             Criando.style.gridArea = GridArea;
