@@ -55,7 +55,7 @@ class Painel{
     
 function CriarUmTicket() {
     const Nomes = ['Título','Descrição','Instância','Nível','Horário','Valor','Owner','Owner2','Vagas','Vagas','Vagas','Vagas','Owner2','Vagas','Vagas','Vagas','Vagas','Vagas']
-    const Names = ['titulo','descricao','valor','owner','owner2','vaga1','vaga5','vaga3','vaga7','vaga2','vaga6','vaga4','vaga8','intancia','nivel','horario']
+    const Names = ['titulo','descricao','valor','owner','owner2','vaga1','vaga5','vaga3','vaga7','vaga2','vaga6','vaga4','vaga8','instancia','nivel','horario']
 
     for (i = -2; i < 29; i++) {
         // Criando Ajustes
@@ -124,20 +124,26 @@ function CriarUmTicket() {
         var Criando = document.createElement(OqueCriar);
 
         // Setando Id.
-            Criando.id = QualId;
+        Criando.id = QualId;
 
         // Setando Class.
-            Criando.classList = QualClass;
+        Criando.classList = QualClass;
 
         // Setando Conteudo.
-            Criando.innerText = QualConteudo;
-            if (Name !== "") {
-                Criando.setAttribute('name',Names[i-13]);
-            }
+        Criando.innerText = QualConteudo;
+        if (Name !== "") {
+            Criando.setAttribute('name',Names[i-13]);
+        }
+
+        if (i === -1){
+            Criando.type = "submit";
+        }
 
         // Setando GridArea 
-            Criando.style.gridArea = GridArea;
-
+        Criando.style.gridArea = GridArea;
+        Criando.action = "http://localhost:3000/api/tickets";
+        Criando.method = "POST";
+        
         // Setando os Pais.
         document.getElementById(Pai).appendChild(Criando);
 
@@ -150,7 +156,7 @@ function CriarUmTicket() {
         var Criando = document.createElement("Option");
 
         // Setando Conteudo.
-            Criando.innerText = Instancias[x];
+        Criando.innerText = Instancias[x];
 
         // Setando os Pais.
         document.getElementById("ComboBox1").appendChild(Criando);

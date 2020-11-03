@@ -14,24 +14,33 @@ const getTickets = async(request,response) => {
 };
 
 const createTicket = async(request, response) => {
-	const { tipo, horario, nivel, owner, valor } = request.body;
+	const { titulo, descricao, instancia, nivel, valor, owner, owner2, vaga1, vaga2, vaga3, vaga4, vaga5, vaga6, vaga7, vaga8} = request.body;
 	const createdTicket = new Ticket({
-		tipo,
-		horario,
+		titulo,
+		descricao,
+		instancia,
 		nivel,
+		valor,
 		owner,
-		valor
+		owner2,
+		vaga1,
+		vaga2,
+		vaga3,
+		vaga4,
+		vaga5,
+		vaga6,
+		vaga7,
+		vaga8
 	});
 
 
 	try{
 		await createdTicket.save();
 	}catch(err){
-		console.log(err);
 		return response.status(500).json({"message": "Erro no servidor"});
 	}
 
-	response.status(201).json({"message": "Ticket criado com sucesso"})
+	response.redirect('/api/tickets');
 }
 
 exports.getTickets = getTickets;

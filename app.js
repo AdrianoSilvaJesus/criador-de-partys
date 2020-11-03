@@ -7,7 +7,8 @@ const app = express();
 
 const ticketsRoutes = require('./routes/tickets-routes');
 
-app.use(bodyParser.json({ extende: true }));
+app.use(bodyParser.json({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
@@ -20,7 +21,6 @@ app.use((request,response,next) => {
 })
 
 app.use((error, request, response, next) => {
-	console.log(error.stack);
 	response.status(error.status).json({'error': `Ocorreu um erro: ${error.message}`});
 });
 
