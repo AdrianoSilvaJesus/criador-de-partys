@@ -33,8 +33,7 @@ class Painel{
         document.getElementById("Protecao").appendChild(Painel);
         document.getElementById("Painel").appendChild(Close);
         document.getElementById("Close").appendChild(CloseX);
-
-        Close.addEventListener("click", this.closePainel);
+        
         CloseX.addEventListener("click", this.closePainel);
 
         
@@ -48,8 +47,7 @@ class Painel{
     closePainel(){
         document.getElementById("Protecao").remove();
         !this.verificaPainel;
-        
-        }
+    }
 };
 
     
