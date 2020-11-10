@@ -65,6 +65,51 @@
     bottom: 0;
 }
 
+#ContainerTicket{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    left: 10%;
+    text-align: left;
+    
+    grid-template-areas:
+    "Titulo Titulo Titulo"
+    "Descricao Descricao Descricao"
+    "InstanciaENivel InstanciaENivel InstanciaENivel"
+    "Horario Valor Owner"
+    "SeInscrever SeInscrever SeInscrever"
+}
+#ContainerTicket Label {
+    color: aliceblue;
+}
+
+#SeInscrever {
+    width: 20%;
+    position: relative;
+    left: 40%;
+    background-color: #FFFFFF00;
+    height: 4vh;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+}
+
+#ContainerTicket_Titulo {
+    top: 50%;
+    position: relative;
+    font-size: 4.5vh;
+}
+#ContainerTicket_Valor {
+    text-align: center;
+}
+#ContainerTicket_Horario  {
+    text-align: center;
+}
+#ContainerTicket_Owner {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .ContainerCriandoTicket {
         height: 85%;
@@ -80,10 +125,10 @@
         "Label7 Label8"
         "Input4 Input5"
         "Label12 Label9"
-        "Input6 Input7"
-        "Input10 Input11"
-        "Input8 Input9"
-        "Input12 Input13"
+        "Input6 Input10"
+        "Input7 Input11"
+        "Input8 Input12"
+        "Input9 Input13"
         "EnviarTicket EnviarTicket"
     }
     .Label {

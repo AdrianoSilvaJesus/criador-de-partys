@@ -13,6 +13,7 @@ function ComboBoxSetando() {
         document.getElementById("ComboBox2").remove(0);
     }
 
+    TrocandoInstancia()
 
     if (InstanciaAtive === 'EndLess Tower') {
         for (i=0; i<ET.length; i++){
@@ -66,6 +67,14 @@ function ComboBoxSetando() {
 
             // Setando os Pais.
             document.getElementById("ComboBox2").appendChild(Criando);
+
+            document.getElementById('TxtBox4').style.display = "";
+            document.getElementById('TxtBox9').style.display = "";
+            document.getElementById('TxtBox10').style.display = "";
+            document.getElementById('TxtBox11').style.display = "";
+            document.getElementById('TxtBox12').style.display = "";
+            document.getElementById('Label8').style.display = "";
+            document.getElementById('Label9').style.display = "";
         }
     }else if (InstanciaAtive === 'EC') {
         for (i=0; i<EC.length; i++){
@@ -77,7 +86,28 @@ function ComboBoxSetando() {
 
             // Setando os Pais.
             document.getElementById("ComboBox2").appendChild(Criando);
+            document.getElementById('TxtBox7').style.display = "none";
+            document.getElementById('TxtBox8').style.display = "none";
         }
     }
 }
 
+    function TrocandoInstancia() {
+        document.getElementById('TxtBox4').style.display = "none";
+        document.getElementById('TxtBox9').style.display = "none";
+        document.getElementById('TxtBox10').style.display = "none";
+        document.getElementById('TxtBox11').style.display = "none";
+        document.getElementById('TxtBox12').style.display = "none";
+        document.getElementById('TxtBox7').style.display = "";
+        document.getElementById('TxtBox8').style.display = "";
+        document.getElementById('Label8').style.display = "none";
+        document.getElementById('Label9').style.display = "none";
+
+        document.getElementById('TxtBox4').value = "";
+        document.getElementById('TxtBox9').value = "";
+        document.getElementById('TxtBox10').value = "";
+        document.getElementById('TxtBox11').value = "";
+        document.getElementById('TxtBox12').value = "";
+        document.getElementById('TxtBox7').value = "";
+        document.getElementById('TxtBox8').value = "";
+    };

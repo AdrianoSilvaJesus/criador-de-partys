@@ -43,6 +43,7 @@
   grid-column-gap: 1%;
   grid-row-gap: 5px;
   padding: 2.5% 0;
+  overflow: auto;
   
 }
 

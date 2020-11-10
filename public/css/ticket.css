@@ -40,7 +40,7 @@
     transition: .3s ease;
 }
 
-#Pago::before {
+.Pago::before {
     background-color: brown;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .Ticket:hover::before{
-    content: 'Loading...';
+    content: 'Clique...';
     overflow: hidden;
     height: 100%;
     width: 100%;

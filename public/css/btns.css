@@ -13,6 +13,9 @@
 #button2 {
     order: -1;
 }
+#button3 {
+    order: -2;
+}
 
 #CloseX {
     position: relative;

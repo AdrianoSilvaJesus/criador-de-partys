@@ -14,13 +14,14 @@ const getTickets = async(request,response) => {
 };
 
 const createTicket = async(request, response) => {
-	const { titulo, descricao, instancia, nivel, valor, owner, owner2, vaga1, vaga2, vaga3, vaga4, vaga5, vaga6, vaga7, vaga8} = request.body;
+	const { titulo, descricao, instancia, nivel, valor, horario, owner, owner2, vaga1, vaga2, vaga3, vaga4, vaga5, vaga6, vaga7, vaga8} = request.body;
 	const createdTicket = new Ticket({
 		titulo,
 		descricao,
 		instancia,
 		nivel,
 		valor,
+		horario,
 		owner,
 		owner2,
 		vaga1,
