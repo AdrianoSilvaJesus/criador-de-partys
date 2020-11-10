@@ -22,22 +22,14 @@ const createTicket = async(request, response) => {
 		nivel,
 		valor,
 		horario,
-		owner,
-		owner2,
-		vaga1,
-		vaga2,
-		vaga3,
-		vaga4,
-		vaga5,
-		vaga6,
-		vaga7,
-		vaga8
+		owner
 	});
 
 
 	try{
 		await createdTicket.save();
 	}catch(err){
+		console.log(err);
 		return response.status(500).json({"message": "Erro no servidor"});
 	}
 
