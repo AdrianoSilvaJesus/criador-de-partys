@@ -21,11 +21,15 @@ app.use((request,response,next) => {
 })
 
 app.use((error, request, response, next) => {
-	response.status(error.status).json({'error': `Ocorreu um erro: ${error.message}`});
+	if(response.headerSent){
+		return next(error);
+	}
+	response.status(error.code || 500);
+	response.json({ message: error.message  || "Um error desconhecido ocorreu" });
 });
 
 mongoose
-.connect("mongodb+srv://usuarioadriano:usuarioadriano@cluster0.g1kvj.mongodb.net/instancias?retryWrites=true&w=majority")
+.connect("mongodb+srv://usuarioadriano:usuarioadriano@cluster0.g1kvj.mongodb.net/instancias?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
 	const server = app.listen(3000,'127.0.0.1',() => {
 		const address = server.address().address
