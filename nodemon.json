@@ -1,0 +1,7 @@
+{
+	"env":{
+		"DB_USER": "usuarioadriano",
+		"DB_PASSWORD": "usuarioadriano",
+		"DB_NAME": "instancias"
+	}
+}

@@ -23,7 +23,7 @@ const getTicket = async(request, response, next) => {
 		return next(error);
 	}
 
-	response.json({ ticket: ticket.toObject({ getter: true }) });
+	response.json({ ticket: ticket });
 }
 
 const getTickets = async(request,response, next) => {

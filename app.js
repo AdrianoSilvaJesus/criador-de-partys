@@ -29,7 +29,7 @@ app.use((error, request, response, next) => {
 });
 
 mongoose
-.connect("mongodb+srv://usuarioadriano:usuarioadriano@cluster0.g1kvj.mongodb.net/instancias?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+.connect(`mongodb+srv://${ process.env.DB_USER }:${ process.env.DB_PASSWORD }@cluster0.g1kvj.mongodb.net/${ process.env.DB_NAME }?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
 	const server = app.listen(3000,'127.0.0.1',() => {
 		const address = server.address().address

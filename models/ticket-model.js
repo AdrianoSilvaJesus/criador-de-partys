@@ -11,4 +11,6 @@ const ticketSchema = new Schema({
 	owner: { type: String, required: true },
 });
 
+ticketSchema.set('toObject',{ getters: true })
+
 module.exports = mongoose.model('Ticket', ticketSchema);
