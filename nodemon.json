@@ -2,6 +2,7 @@
 	"env":{
 		"DB_USER": "usuarioadriano",
 		"DB_PASSWORD": "usuarioadriano",
-		"DB_NAME": "instancias"
+		"DB_NAME": "instancias",
+		"JWT_KEY": "dbJo8$HSvI^niJ4!TwQ%4&qE4cDAcBB*Bv!Ms&4YMn^qyxkbVN"
 	}
 }

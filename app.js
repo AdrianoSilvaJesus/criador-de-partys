@@ -6,6 +6,7 @@ const cors = require('cors');
 const app = express();
 
 const ticketsRoutes = require('./routes/tickets-routes');
+const usersRoutes = require('./routes/users-routes');
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use('/api/tickets', ticketsRoutes);
+app.use('/api/login', usersRoutes);
 
 app.use((request,response,next) => {
 	const error = new Error('Rota não encontrada');
