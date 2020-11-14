@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../public/css/Painel.css">
         <link rel="stylesheet" href="../public/css/Construtor.css">
         <link rel="stylesheet" href="../public/css/btns.css">
+        <link rel="stylesheet" href="../public/css/Login.css">
         <link href='https://fonts.googleapis.com/css?family=Sansita+Swashed' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     </head>
@@ -18,7 +19,7 @@
 
         <header id="Header">
             <div class="containerHeader">
-              <div id="button1" class="btn">
+              <div id="button1" class="btn" onclick="ClickLogin()">
                   <i id="usericon" class="fas fa-user"></i>
               </div>
               <div id="button2" class="btn" style = "display:none"><!-- Função ainda não incluida!-->
@@ -31,7 +32,15 @@
         </header>
 
         <div id="PainelControle"><!--Não Me excluir!--></div>
-        
+          <div id="LoginContainer">
+            <form action="" id="FormLogin">
+              <label for="Login" id="LabelLogin">Login</label>
+              <input type="text" id="Login">
+              <label for="Password" id="LabelPass">Senha</label>
+              <input type="password" id="Password">
+              <button id="ButtonLogin">Logar!</button>
+            </form>
+          </div>
         <div class="container">
           <div class="Particao" id="ET">
               <h3>EndLess Tower</h3>
@@ -115,5 +124,6 @@
     <script type="text/javascript" src="../public/js/request.js"></script>
     <script type="text/javascript" src="../public/js/ComboBox.js"></script>
     <script type="text/javascript" src="../public/js/Ticket.js"></script>
+    <script type="text/javascript" src="../public/js/Login.js"></script>
     <script src="https://kit.fontawesome.com/92b470d4bc.js" crossorigin="anonymous"></script>
 </html>

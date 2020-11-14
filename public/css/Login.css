@@ -1,0 +1,51 @@
+#LoginContainer {
+    width: 30%;
+    min-width: 250px;
+    height: 50%;
+    border-radius: 20px 0 20px 20px;
+    position: absolute;
+    background-color: #ffffffff;
+    z-index: 1000;
+    top: 5%;
+    right: 2%;    
+}
+
+#FormLogin{
+    position: relative;
+    height: 60%;
+    top: 20%;
+    display: grid;
+    grid-template-areas:
+    "LabelLogin"
+    "Login"
+    "LabelPass"
+    "Password"
+    "ButtonLogin";
+    row-gap: 20px;
+    text-align: center;
+}
+
+#LabelLogin{
+    grid-area: LabelLogin;
+}
+#Login{
+    grid-area: Login;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+#LabelPass{
+    grid-area: LabelPass;
+}
+#Password{
+    grid-area: Password;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+#ButtonLogin{
+    grid-area: ButtonLogin;
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
