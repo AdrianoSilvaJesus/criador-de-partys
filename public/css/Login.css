@@ -2,9 +2,9 @@
     width: 30%;
     min-width: 250px;
     height: 50%;
-    border-radius: 20px 0 20px 20px;
-    position: absolute;
-    background-color: #ffffffff;
+    border-radius: 10px 0 10px 10px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
     z-index: 1000;
     top: 5%;
     right: 2%;    
@@ -27,12 +27,18 @@
 
 #LabelLogin{
     grid-area: LabelLogin;
-}
+    }
 #Login{
     grid-area: Login;
     width: 90%;
     position: relative;
     left: 5%;
+
+    background-color: #222;
+    border-radius: 2px;
+    border: 2px solid rgb(8, 187, 241);
+    padding: 0 8px;
+    color: rgb(8, 187, 241);
 }
 #LabelPass{
     grid-area: LabelPass;
@@ -42,10 +48,26 @@
     width: 90%;
     position: relative;
     left: 5%;
+
+    background-color: #222;
+    border-radius: 2px;
+    border: 2px solid rgb(8, 187, 241);
+    padding: 0 8px;
+    color: rgb(8, 187, 241);
 }
 #ButtonLogin{
     grid-area: ButtonLogin;
     width: 30%;
     position: relative;
     left: 35%;
+    border-radius: 2px;
+    border: 2px solid rgb(8, 187, 241);
+}
+
+#CadastrarSe {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
 }

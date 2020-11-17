@@ -74,7 +74,8 @@ function ComboBoxSetando() {
             document.getElementById('TxtBox11').style.display = "";
             document.getElementById('TxtBox12').style.display = "";
             document.getElementById('Label8').style.display = "";
-            document.getElementById('Label9').style.display = "";
+            document.getElementById('Label10').style.display = "";
+            document.getElementById('Label11').style.display = "";
         }
     }else if (InstanciaAtive === 'EC') {
         for (i=0; i<EC.length; i++){
@@ -101,7 +102,8 @@ function ComboBoxSetando() {
         document.getElementById('TxtBox7').style.display = "";
         document.getElementById('TxtBox8').style.display = "";
         document.getElementById('Label8').style.display = "none";
-        document.getElementById('Label9').style.display = "none";
+        document.getElementById('Label10').style.display = "none";
+        document.getElementById('Label11').style.display = "none";
 
         document.getElementById('TxtBox4').value = "";
         document.getElementById('TxtBox9').value = "";
