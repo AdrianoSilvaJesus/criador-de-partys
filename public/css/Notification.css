@@ -1,0 +1,26 @@
+.notification{
+	top: 5%;
+	position: absolute;
+	padding: 1%;
+	border-right: 10px solid ;
+}
+
+.danger{
+	background-color: #f8d7da;
+	color: #931c29;
+	border-color: #931c29;
+}
+
+.success{
+	background-color: #d4edda;
+	color: #1a5724;
+	padding: 1%;
+	border-color: #1a5724;
+}
+
+.info{
+	background-color: #d1ecf1;
+	color: #0c5891;
+	padding: 1%;
+	border-color: :#0c5891;
+}

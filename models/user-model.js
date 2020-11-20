@@ -12,8 +12,4 @@ const userSchema = new Schema({
 
 userSchema.plugin(uniqueValidator);
 
-userSchema.methods.checkExistingUser = (callback) => {
-	return mongoose.model('User').findOne({ email: this.email }, callback);
-}
-
 module.exports = mongoose.model('User', userSchema);

@@ -1,8 +1,8 @@
 function ClickLogin() {
-    if ( document.getElementById("LoginContainer").style.display === "") {
-        document.getElementById("LoginContainer").style.display = "none";
-    }else{
-        document.getElementById("LoginContainer").style.display = ""
-    }
+	let loginContainer = document.getElementById("LoginContainer");
+
+    if (!loginContainer.style.display) return loginContainer.style.display = "block";
+    
+    loginContainer.style.display = "";
 }
 

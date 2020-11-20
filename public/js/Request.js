@@ -13,8 +13,7 @@ const RenderTickets = async() => {
 	try{
 		tickets = await GetTickets();
 	}catch(err){
-		console.log(err);
-		alert("Erro na requisição !");
+		Notification.alert('danger', 'Erro na Requisição', 'Não foi possivel obter os tickets tente novamente mais tarde !');
 		return;
 	}
 	console.log(tickets);

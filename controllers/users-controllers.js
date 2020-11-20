@@ -1,10 +1,21 @@
 const bcrypt = require('bcrypt');
 const jsonWebToken = require('jsonwebtoken');
+const { validationResult } = require('express-validator');
 
 const User = require('../models/user-model');
 const HttpError = require('../models/http-error');
 
 const signup = async(request, response, next) => {
+	const errors = validationResult(request);
+
+	if(!errors.isEmpty()){
+		const error = new HttpError(
+			'Entrada inválida, por favor verifique suas informações.',
+			500
+		);
+		return next(error);
+	}
+
 	const { name, email, password } = request.body;
 
 	let existingUser;
@@ -68,4 +79,11 @@ const signup = async(request, response, next) => {
 	response.status(201).json({ userId: createdUser.id, email: createdUser.email, token: token });
 }
 
+const signin = (request, response, next) => {
+	const { email, password } = request.body;
+
+	console.log("E-mail: %s Password: %s", email, password);
+}
+
 exports.signup = signup;
+exports.signin = signin;

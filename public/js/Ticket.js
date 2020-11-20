@@ -9,9 +9,9 @@ function AbrirTicket () {
     ]
 
     // Container
-        var Criando = document.createElement("div")
-        Criando.id = "ContainerTicket"
-        document.getElementById('Painel').appendChild(Criando)
+    var Criando = document.createElement("div")
+    Criando.id = "ContainerTicket"
+    document.getElementById('Painel').appendChild(Criando)
 
     for (i=0 ; i<6 ; i++) {
         var Criando = document.createElement("Label")
