@@ -23,6 +23,8 @@ h3 {
   background-color: #000;
   width: 100%;
   height: 5%;
+  position: fixed;
+  z-index: 200;
 }
 
 .containerHeader {
@@ -48,6 +50,14 @@ footer{
   height: 4%;
   width: 100%;
   text-align: center;
-  color: white;
-  background-color: #000000;
+  color: pink;
+  background-color: #000;
+  z-index: 200;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: aqua;
 }
