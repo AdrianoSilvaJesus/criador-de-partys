@@ -3,14 +3,9 @@
   height: 90%;
   position: relative;
   text-align: center;
-<<<<<<< HEAD
-}
-=======
   top: 5%;
   z-index: 0;
   }
->>>>>>> 0c53b1ff13d47435a4f6d63806239ca059eb178a
-
 .Particao {
     min-height: 30%;
     width: 100%;
@@ -60,14 +55,10 @@ h3{
   }
 }
 
-
-<<<<<<< HEAD
 .container h3{
     text-align: center;
     color: hotpink;
     position: relative;
 }
-=======
->>>>>>> 0c53b1ff13d47435a4f6d63806239ca059eb178a
 
 
