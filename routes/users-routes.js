@@ -14,11 +14,11 @@ router.post('/signup',
 	usersControllers.signup
 );
 
-router.post('/signin',[
+router.post('/login',[
 		check('email').isEmail(),
 		check('password').isLength({ min: 8 })
 	],
-	usersControllers.signin)
-;
+	usersControllers.login
+);
 
 module.exports = router;

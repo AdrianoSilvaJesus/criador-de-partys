@@ -8,7 +8,9 @@
     border-radius: 5%;
     font-family: 'Bangers';
     flex: 1 0 1;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2vh;
     min-width: 60px;
     min-height: 70px;
