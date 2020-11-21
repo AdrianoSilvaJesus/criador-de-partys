@@ -31,16 +31,25 @@
         </header>
 
         <div id="PainelControle"><!--Não Me excluir!--></div>
-          <div id="LoginContainer">
-            <form action="localhost:3000/api/login/signin" id="FormLogin">
-              <label for="Login" id="LabelLogin">E-mail</label>
-              <input type="text" id="Login" name="email">
-              <label for="Password" id="LabelPass">Senha</label>
-              <input type="password" id="Password" name="password">
-              <button id="ButtonLogin">Logar !</button>
-            </form>
-            <div id="CadastrarSe">Cadastrar-se</div>
-          </div>
+
+        <div id="LoginContainer" class="logar">
+          <form id="FormLogin">
+            <label id="LabelUserName" for="Login">Nome de Usuário</label>
+            <input id="name" type="text" name="name">
+            
+            <label for="Login" id="LabelEmail">E-mail</label>
+            <input type="text" id="email" name="email">
+
+            <label for="Password" id="LabelPass">Senha</label>
+            <input type="password" id="password" name="password">
+            
+            <div id="auth-buttons">
+              <button id="authButton" class="button-success" type="submit" onclick="login(event)">Cadastrar</button>
+              <button id="changeAuthMode" class="button-info" onclick="changeFormAuthType(event)">Iniciar Sessão</button>
+            </div>
+          </form>
+        </div>
+
         <div class="container">
           <div class="Particao" id="ET">
               <h3>EndLess Tower</h3>
@@ -120,10 +129,12 @@
     
     <script type="text/javascript" src="../public/js/Construtor.js"></script>
     <script type="text/javascript" src="../public/js/Notification.js"></script>
+    <script type="text/javascript" src="../public/js/Animations.js"></script>
     <script type="text/javascript" src="../public/js/Painel.js"></script>
     <script type="text/javascript" src="../public/js/Request.js"></script>
     <script type="text/javascript" src="../public/js/ComboBox.js"></script>
     <script type="text/javascript" src="../public/js/Ticket.js"></script>
     <script type="text/javascript" src="../public/js/Login.js"></script>
+    <script type="text/javascript" src="../public/js/Auth.js"></script>
     <script src="https://kit.fontawesome.com/92b470d4bc.js" crossorigin="anonymous"></script>
 </html>

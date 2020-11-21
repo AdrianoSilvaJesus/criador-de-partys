@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 
 const app = express();
 
@@ -11,7 +10,12 @@ const usersRoutes = require('./routes/users-routes');
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors());
+app.use((request,response,next) => {
+  response.setHeader('Access-Control-Allow-Origin','*');
+  response.setHeader('Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, AcCept, Authorization',);
+  response.setHeader('Access-Control-Allow-Methods','GET, POST, PATCH, DELETE');
+  next();
+});
 
 app.use('/api/tickets', ticketsRoutes);
 app.use('/api/login', usersRoutes);

@@ -7,78 +7,78 @@
     background-color: #ffffffff;
     border-radius: 10px 0 10px 10px;
     position: fixed;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #017374;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    color: white;
     z-index: 1000;
     top: 5%;
     right: 2%;
-    display: none;    
+    display: none;
 }
 
-#FormLogin{
-    position: relative;
-    height: 60%;
-    top: 20%;
-    display: grid;
-    grid-template-areas:
-    "LabelLogin"
-    "Login"
-    "LabelPass"
-    "Password"
-    "ButtonLogin";
-    row-gap: 20px;
-    text-align: center;
-}
-
-#LabelLogin{
-    grid-area: LabelLogin;
-    }
-#Login{
-    grid-area: Login;
-    width: 90%;
-    position: relative;
-    left: 5%;
-
-    background-color: #222;
-    border-radius: 2px;
-    border: 2px solid rgb(8, 187, 241);
-    padding: 0 8px;
-    color: rgb(8, 187, 241);
-}
-#LabelPass{
-    grid-area: LabelPass;
-}
-#Password{
-    grid-area: Password;
-    width: 90%;
-    position: relative;
-    left: 5%;
-
-    background-color: #222;
-    border-radius: 2px;
-    border: 2px solid rgb(8, 187, 241);
-    padding: 0 8px;
-    color: rgb(8, 187, 241);
-}
-#ButtonLogin{
-    grid-area: ButtonLogin;
-    width: 30%;
-    position: relative;
-    left: 35%;
-<<<<<<< HEAD
-    /*Style*/
-    font-size: 12pt;
-    background-color: #28a745;
-    color: white;
-    border: none;
-=======
-    border-radius: 2px;
-    border: 2px solid rgb(8, 187, 241);
-}
-
-#CadastrarSe {
+#LoginContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    padding-bottom: 10px;
+    height: 100%;
 }
+
+#LoginContainer form input{
+    width: 80%;
+    background-color: #0f0f14;
+    border: 1px solid #52aabb;
+    border-radius: 5px;
+    font-size: 14pt;
+    color: white;
+}
+
+#auth-buttons{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#auth-buttons button{
+    width: 50%;
+    margin-bottom: 15px;
+    border:none;
+    font-size: 14pt;
+    color: white;
+    border-radius: 10px;
+}   
+
+.button-success{
+    background-color: #28a745;
+}
+
+.button-info{
+    background-color: #17a2b8;
+}
+
+.divLoader{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.loader {
+  margin: 20% auto 0px auto; 
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
