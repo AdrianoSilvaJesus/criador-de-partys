@@ -15,7 +15,7 @@
     position: absolute;
 }
 
-#FormUserInfo{
+#UserInfo{
     grid-template-areas:
     "UserNome UserNome"
     "UserReputacao UserReputacao"
@@ -29,7 +29,7 @@
     grid-column-gap: 5px;
 }
 
-#FormUserInfo label{
+#UserInfo label{
     color: rgb(8, 187, 241);
 }
 #UserNome{
