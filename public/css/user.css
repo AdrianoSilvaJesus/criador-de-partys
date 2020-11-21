@@ -1,0 +1,74 @@
+#ContainerUserLogado {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: "";
+}
+
+#ContainerInformacoesUser{
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 5%;
+    position: absolute;
+}
+
+#FormUserInfo{
+    grid-template-areas:
+    "UserNome UserNome"
+    "UserReputacao UserReputacao"
+    "UserConta UserConta"
+    "ButtonPremium Deslogar";
+    display: grid;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    position: relative;
+    grid-column-gap: 5px;
+}
+
+#FormUserInfo label{
+    color: rgb(8, 187, 241);
+}
+#UserNome{
+    grid-area: UserNome;
+}
+
+#UserReputacao{
+    grid-area: UserReputacao;
+}
+
+#UserConta{
+    grid-area: UserConta;
+}
+
+#ButtonPremium{
+    grid-area: ButtonPremium;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+    padding: 0 5px;
+    background-color: #202025;
+    color: rgb(8, 187, 241);
+    border: 1px solid #101015;
+    border-radius: 4px;
+}
+
+#Deslogar{
+    grid-area: Deslogar;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+    font-size: 3vh;
+    padding: 0 5px;
+    background-color: rgb(230, 73, 104);
+    color: white;
+    border: 1px solid rgb(230, 73, 104);
+    border-radius: 4px;
+}

@@ -4,6 +4,8 @@ class Painel{
     };
     
     renderPainel(color = null, imageUrl = null){
+        
+    document.getElementById("LoginContainer").style.display = 'none';
         if (document.getElementById("Protecao") !== null) {
             document.getElementById("Protecao").remove();
         }
@@ -52,6 +54,8 @@ class Painel{
 
     
 function CriarUmTicket() {
+    document.getElementById("LoginContainer").style.display = 'none';
+
     const Nomes = ['Título','Descrição','Instância','Nível','Horário','Valor','Owner','Owner2','Vagas','Vagas','Vagas','Vagas','Owner2','Vagas','Vagas','Vagas','Vagas','Vagas']
     const Names = ['titulo','descricao','valor','owner','owner2','vaga1','vaga5','vaga3','vaga7','vaga2','vaga6','vaga4','vaga8','instancia','nivel','horario']
 

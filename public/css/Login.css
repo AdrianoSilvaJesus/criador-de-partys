@@ -1,3 +1,11 @@
+#ContainerParaLogin{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
 #LoginContainer {
     width: 30%;
     height: 50%;
@@ -64,13 +72,13 @@
     width: 30%;
     position: relative;
     left: 35%;
-<<<<<<< HEAD
+
     /*Style*/
     font-size: 12pt;
     background-color: #28a745;
     color: white;
     border: none;
-=======
+    
     border-radius: 2px;
     border: 2px solid rgb(8, 187, 241);
 }

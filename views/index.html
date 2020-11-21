@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../public/css/Construtor.css">
         <link rel="stylesheet" href="../public/css/btns.css">
         <link rel="stylesheet" href="../public/css/Login.css">
+        <link rel="stylesheet" href="../public/css/user.css" />
         <link rel="stylesheet" href="../public/css/Notification.css" />
         <link href='https://fonts.googleapis.com/css?family=Sansita+Swashed' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
@@ -32,14 +33,35 @@
 
         <div id="PainelControle"><!--Não Me excluir!--></div>
           <div id="LoginContainer">
-            <form action="localhost:3000/api/login/signin" id="FormLogin">
-              <label for="Login" id="LabelLogin">E-mail</label>
-              <input type="text" id="Login" name="email">
-              <label for="Password" id="LabelPass">Senha</label>
-              <input type="password" id="Password" name="password">
-              <button id="ButtonLogin">Logar !</button>
-            </form>
-            <div id="CadastrarSe">Cadastrar-se</div>
+
+            <div id="ContainerParaLogin">
+              <!--Container de Login-->
+              <form action="localhost:3000/api/login/signin" id="FormLogin">
+                <label for="Login" id="LabelLogin">E-mail</label>
+                <input type="text" id="Login" name="email">
+                <label for="Password" id="LabelPass">Senha</label>
+                <input type="password" id="Password" name="password">
+                <button id="ButtonLogin">Logar !</button>
+              </form>
+              <div id="CadastrarSe">Cadastrar-se</div>
+            </div>
+
+            <div id="ContainerUserLogado">
+              <!--Container de User Logado-->
+              <div id="ContainerInformacoesUser">
+                <form id="FormUserInfo">
+                  <label id="UserNome">Usuário: </label>
+                  <label id="UserReputacao">Reputação: </label>
+                  <label id="UserConta">Conta: Grátis/Premium</label>
+                  <button id="ButtonPremium">Torne-se Premium</button>
+                  <button id="Deslogar">Deslogar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          <div id="UserContainer" style="display: none;">
+
           </div>
         <div class="container">
           <div class="Particao" id="ET">
