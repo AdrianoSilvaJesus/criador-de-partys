@@ -42,7 +42,7 @@
   
 }
 
-h3{
+.container h3{
   text-align: center;
   color: #D0FEFE;
   position: relative;
@@ -55,10 +55,5 @@ h3{
   }
 }
 
-.container h3{
-    text-align: center;
-    color: rgb(8, 187, 241);
-    position: relative;
-}
 
 
