@@ -1,3 +1,11 @@
+#ContainerParaLogin{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
 #LoginContainer {
     width: 30%;
     height: 50%;
@@ -55,6 +63,16 @@
 
 .button-success{
     background-color: #28a745;
+    left: 35%;
+
+    /*Style*/
+    font-size: 12pt;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    
+    border-radius: 2px;
+    border: 2px solid rgb(8, 187, 241);
 }
 
 .button-info{
